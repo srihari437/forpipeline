@@ -15,5 +15,10 @@ pipeline {
                 sh 'mvn clean package'
           }
       }       
+     stage ('deploy') {
+           steps{
+               sh '/opt/shell.sh'
+           }
+       }         
    }  
 }
